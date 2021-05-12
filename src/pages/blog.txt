@@ -1,0 +1,60 @@
+import React, { Component } from "react"
+import Layout from "../components/layout"
+import { Link } from 'gatsby'
+import { Container, Row, Col } from "react-bootstrap"
+
+
+
+
+
+const Articles = ({ data }) => (
+
+    <
+    Layout >
+    <
+    Container >
+
+    {
+        data.allStrapiArticle.edges.map(document => ( <
+            Row >
+            <
+            Col >
+            <
+            Link to = { `/${document.node.id}` } > < h2 > { document.node.title } < /h2></Link >
+            <
+            p > < /p> < /
+            Col > <
+            /Row> 
+        ))
+    }
+
+    <
+    /Container>
+
+
+    <
+    /Layout>
+)
+
+export default Articles
+
+export const pageQuery = graphql `
+query articlequery {
+  allStrapiArticle {
+    edges {
+      node {
+        title
+        body
+        id
+        picture {
+            childImageSharp {
+                fluid(maxHeight: 700) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+        }
+      }
+    }
+  }
+}
+`

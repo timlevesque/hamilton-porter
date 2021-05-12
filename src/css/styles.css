@@ -1,0 +1,289 @@
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: bold;
+    color: rgb(25, 80, 144);
+}
+
+.btn {
+    border-radius: 100px;
+}
+
+.btn-primary {
+    background-color: rgb(254, 146, 3);
+    border: rgb(254, 146, 3);
+}
+
+.btn-primary:hover {
+    background-color: rgb(206, 117, 0);
+    border: rgb(206, 117, 0);
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+body {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    width: 100%;
+    height: 30%;
+    background-image: url('../images/dotted-bg.png');
+    background-position: 50% 50%;
+    background-size: auto;
+}
+
+.bg-footer {
+    background-size: 100% 100%;
+    background-image: url('../images/bg-footer.png');
+    background-repeat: no-repeat;
+}
+
+.bg-blob {
+    background-size: 100% 100%;
+    background-image: url('../images/blob.png');
+    background-repeat: no-repeat;
+}
+
+.bg-blob2 {
+    background-image: url('../images/blob2.png');
+    background-repeat: no-repeat;
+}
+
+.bg-blob,
+.bg-blob2,
+.bg-footer {
+    background-size: 100% 100%;
+}
+
+.fb-icon {
+    height: 40px;
+    width: 40px;
+    background-size: 100% 100%;
+    background-image: url('../images/fb-logo.svg');
+    background-repeat: no-repeat;
+}
+
+.in-icon {
+    height: 40px;
+    width: 40px;
+    background-size: 100% 100%;
+    background-image: url('../images/in-logo.svg');
+    background-repeat: no-repeat;
+}
+
+a {
+    color: rgb(254, 146, 3);
+}
+
+p,
+.text-dark {
+    color: rgb(25, 80, 144) !important;
+}
+
+.text-black {
+    color: rgb(24, 24, 24) !important;
+}
+
+footer p,
+.text-white {
+    color: white !important;
+}
+
+.text-light {
+    color: rgb(111, 181, 247) !important;
+}
+
+h1,
+h1 p {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+}
+
+h2,
+h2 p {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+}
+
+h3,
+h3 p {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+}
+
+h4,
+h4 p {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+}
+
+.r-0 {
+    right: 0;
+}
+
+.l-0 {
+    left: 0;
+}
+
+pre {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+.blend-img {
+    mix-blend-mode: multiply;
+}
+
+.rec-arrow {
+    color: #fff !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.rec-arrow:hover:enabled,
+.rec-arrow:focus:enabled {
+    color: #fff !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.rec-arrow:disabled {
+    opacity: 0 !important;
+}
+
+.rec-dot {
+    border: 1px solid white !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.rec-dot_active {
+    border: 1px solid white !important;
+    background-color: white !important;
+    box-shadow: none !important;
+}
+
+
+/*carousel*/
+
+.card-carousel-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.card-carousel-wrapper>.col {
+    display: inline-flex;
+    white-space: initial;
+    margin-right: -4px !important;
+    width: 100%;
+}
+
+.carousel-indicator {
+    width: 9px;
+    height: 9px;
+    background-color: grey;
+    display: inline-block;
+    margin: 0.2rem;
+    border-radius: 100%;
+}
+
+.carousel-indicator.active {
+    background-color: rgb(239, 137, 3)!important;
+}
+
+.card-title h3,
+a {
+    white-space: normal;
+}
+
+
+/* hides horizontal scrollbar */
+
+.overflow-scroll-md::-webkit-scrollbar,
+.card-carousel-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+
+/*end carousel*/
+
+@media (min-width: 576px) {
+    p {
+        font-size: 1 rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .alt-order:nth-child(odd) div:nth-child(1) {
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .rec-arrow {
+        display: none;
+    }
+    .bg-blob,
+    .bg-blob2,
+    .bg-footer {
+        background-size: 150% 100%;
+        background-position: 50% 100%;
+    }
+    h1,
+    h1 p {
+        font-size: 32px;
+    }
+    h2,
+    h2 p {
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        font-size: 28px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 800;
+    }
+    h3,
+    h3 p {
+        font-size: 18px;
+    }
+    h4,
+    h4 p {
+        font-size: 16px;
+    }
+    .nav-link {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
